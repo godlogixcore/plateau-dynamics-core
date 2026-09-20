@@ -1,0 +1,47 @@
+PolyForm Noncommercial License 1.0.0
+
+<https://polyformproject.org/licenses/noncommercial/1.0.0>
+
+## Acceptance
+
+By using the software, you accept this license for your use of the software.
+
+## Copyright License
+
+The licensor grants you a copyright license for the software to do everything you might do with the software that is not otherwise restricted by this license. The only rights the licensor does not grant you are the rights the licensor does not have or the rights prohibited by law.
+
+## Noncommercial Restriction
+
+You may not make money using the software, without permission from the licensor. Noncommercial uses are free.
+
+## Conditions
+
+If you make changes to the software, you must do one of the following:
+
+- Publish all changed source code promptly to everyone, in the preferred form for making changes, under terms at least as permissive as this license; or
+- Publish all changed source code to everyone promptly, under the terms of the Nonprofit Open Software License version 3.0, the European Union Public Licence version 1.2, or any later version of those licenses; or
+- Keep all changed source code private, and only allow the licensor and direct commercial licensees to use the software.
+
+## Excuse
+
+You are excused for unknowingly breaking [Noncommercial Restriction](#noncommercial-restriction) if you stop doing so as soon as you are aware. You will not be excused if the licensor licenses the same software to someone else, or stakes a license to someone else, and that person or company challenges the way you respect the rules of this license.
+
+## No Other Rights
+
+These are the only rights the licensor grants. The licensor does not grant the right to sublicense. The right to sublicense does not come from this license.
+
+## No Liability
+
+As far as the law allows, the software comes as is, without any warranty or condition, and the licensor will not be liable to you for any damages arising out of this license or the use or nature of the software, under any kind of legal claim.
+
+## Definitions
+
+The **licensor** is the individual or entity offering these terms, and the **software** is the software the licensor makes available under these terms.
+
+**You** refers to each individual or legal entity exercising permissions granted by this license.
+
+**Your** refers to an individual or legal entity exercising permissions granted by this license.
+
+---
+
+Copyright (c) 2026 GodlogixCore / Ruben Kabongo. All rights reserved.
