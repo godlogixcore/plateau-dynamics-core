@@ -1,43 +1,79 @@
-# Plateau Dynamics Core
+# Plateau Dynamics Manuscript Engine
 
-This is a standalone causal/live reference engine. It is a separate project and
-has no dependency on the UPM Engine repository or its modules.
+This repository is the standalone **Plateau Dynamics Manuscript Engine**.
 
-## Install
+It is independent from the UPM Engine repository and contains two separate
+implementations:
+
+- `plateau_dynamics_core.py` — compact causal/live core.
+- `plateau_dynamics_manuscript_engine.py` — manuscript-grade reference engine
+  implementing the full formalism described in the Plateau Dynamics manuscript.
+
+## Manuscript
+
+**Plateau Dynamics: A Unified Operational Definition for Real-Time Detection
+and Measurement of Persistent Low-Dynamical Objects in Observation Space**
+
+Author: Ruben Kabongo, 2026  
+DOI: `10.5281/zenodo.19781076`
+
+## Manuscript engine capabilities
+
+The manuscript engine provides:
+
+- retrospective temporal constitution;
+- fully causal live and streaming operation;
+- frozen threshold lenses and calibration prefixes;
+- persistence-confirmed Plateau identity;
+- post-identity live Order measurement;
+- generic spatial graph constitution;
+- optional HEALPix adjacency through `healpy`;
+- cross-scale lineage helpers;
+- CSV and JSON export helpers; and
+- a command-line interface for temporal, live, and HEALPix workflows.
+
+The manuscript reference implementation is intentionally separate from the
+compact core. Neither implementation depends on the UPM Engine repository.
+
+## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Python usage
-
-```python
-from plateau_dynamics_core import Lambda, PDEngine
-
-L = Lambda(m=9, pi_min=5.0, eps_d=0.02, eps_v=0.01)
-engine = PDEngine(L)
-for t, value in zip(times, values):
-    snapshot = engine.feed(t, value)
-    if snapshot["event"] in {"plateau_on", "plateau_off"}:
-        print(snapshot)
-```
-
-If thresholds are omitted, they are calibrated once from
-`calibration_points` causal operator evaluations and then frozen. Live Order
-starts only after confirmation; `result()` additionally exposes distinct
-retrospective support.
-
-## Command line
+The required dependencies are NumPy, pandas, and SciPy. HEALPix support is
+optional:
 
 ```bash
-python plateau_dynamics_core.py signal.csv \
-  --signal-column value --time-column time --window 9 --pi-min 5 \
-  --catalogue plateaus.csv
+pip install healpy
 ```
 
-Supported inputs are CSV/TXT and one-dimensional NPY. Spatial graph analysis is
-available through `constitute_spatial`; HEALPix support can be added as an
-optional adapter when `healpy` is installed.
+## Usage
 
-This project reports measured temporal/spatial structure only. It does not
+```python
+from plateau_dynamics_manuscript_engine import Lambda, constitute_temporal
+
+contract = Lambda(m=9, pi_min=5.0, eps_d=0.02, eps_v=0.01)
+result = constitute_temporal(values, times, contract)
+```
+
+For causal replay:
+
+```python
+from plateau_dynamics_manuscript_engine import Lambda, replay_live
+
+live = replay_live(values, times, Lambda(m=9, pi_min=5.0))
+```
+
+Command-line examples:
+
+```bash
+python plateau_dynamics_manuscript_engine.py temporal signal.csv \
+  --signal-column value --time-column time --window 9 --pi-min 5
+
+python plateau_dynamics_manuscript_engine.py live signal.csv \
+  --signal-column value --time-column time --window 9 --pi-min 5
+```
+
+The engine reports measured temporal and spatial structure only. It does not
 assign clinical or domain labels.
