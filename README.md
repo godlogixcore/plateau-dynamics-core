@@ -15,7 +15,7 @@ implementations:
 and Measurement of Persistent Low-Dynamical Objects in Observation Space**
 
 Author: Ruben Kabongo, 2026  
-DOI: `10.5281/zenodo.19781076`
+ORCID: [0009-0005-5573-0857](https://orcid.org/0009-0005-5573-0857)
 
 ## Manuscript engine capabilities
 
