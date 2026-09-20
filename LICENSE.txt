@@ -44,4 +44,8 @@ The **licensor** is the individual or entity offering these terms, and the **sof
 
 ---
 
-Copyright (c) 2026 GodlogixCore / Ruben Kabongo. All rights reserved.
+**Plateau Dynamics**
+
+Copyright (c) 2026 Ruben Kabongo, Rotterdam, The Netherlands
+
+ORCID: [0009-0005-5573-0857](https://orcid.org/0009-0005-5573-0857)
