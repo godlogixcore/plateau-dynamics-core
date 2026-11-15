@@ -77,3 +77,16 @@ python plateau_dynamics_manuscript_engine.py live signal.csv \
 
 The engine reports measured temporal and spatial structure only. It does not
 assign clinical or domain labels.
+
+## Licensing
+
+© 2026 GodlogixCore / Ruben Kabongo, ORCID
+[0009-0005-5573-0857](https://orcid.org/0009-0005-5573-0857)
+
+- Software and source code are licensed under the
+  [PolyForm Noncommercial License 1.0.0](LICENSE.txt).
+- Original GodlogixCore texts, figures and documentation are licensed under
+  [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), except where
+  otherwise specified.
+- Commercial use requires a separate written agreement with GodlogixCore.
+- Third-party materials retain their own licenses.

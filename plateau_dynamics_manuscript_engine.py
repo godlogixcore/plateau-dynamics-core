@@ -6,7 +6,7 @@ Ruben Kabongo, 2026
 Manuscript:
 "Plateau Dynamics: A Unified Operational Definition for Real-Time Detection
 and Measurement of Persistent Low-Dynamical Objects in Observation Space"
-DOI: 10.5281/zenodo.19781076
+ORCID: 0009-0005-5573-0857
 
 Constitutive sequence
 ---------------------
