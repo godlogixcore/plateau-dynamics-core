@@ -4,6 +4,9 @@
 This repository is independent from the UPM engine. It implements causal local
 operators, frozen threshold calibration, persistence-confirmed plateaus, live
 Order, replay, CSV/NPY streaming, and graph-based spatial constitution.
+
+Ruben Kabongo, 2026
+ORCID: 0009-0005-5573-0857
 """
 from __future__ import annotations
 
